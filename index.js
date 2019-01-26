@@ -6,7 +6,8 @@ app.get('/', (req, res) => {
     name: {
       first: 'Jason',
       last: 'Bland'
-    }
+    },
+    age: 101
   });
 });
 
