@@ -21,6 +21,10 @@ passport.use(
   )
 );
 
+app.get('/', (req, res) => {
+  res.send('hello');
+});
+
 // attempt authentication (get code)
 app.get(
   '/auth/google',
