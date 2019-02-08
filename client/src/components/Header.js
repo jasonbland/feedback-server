@@ -1,11 +1,17 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
-const Header = () => {
-  return (
-    <div>
-      <div>Header</div>
-    </div>
-  );
-};
+class Header extends React.Component {
+  render() {
+    return (
+      <div>
+        <div>Header</div>
+      </div>
+    );
+  }
+}
 
-export default Header;
+export default connect(
+  null,
+  null
+)(Header);
