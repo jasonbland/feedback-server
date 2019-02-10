@@ -9,7 +9,7 @@ import SurveyNew from './SurveyNew';
 class App extends React.Component {
   render() {
     return (
-      <div>
+      <div className="container">
         <BrowserRouter>
           <div>
             <Header />
