@@ -14,7 +14,9 @@ module.exports = app => {
   );
 
   // code returned (get user profile)
-  app.get('/auth/google/callback', passport.authenticate('google'));
+  app.get('/auth/google/callback', passport.authenticate('google'), (req, res) => {
+    res.redirect('/surveys');
+  });
 
   app.get('/api/logout', (req, res) => {
     req.logout();
