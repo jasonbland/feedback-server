@@ -4,8 +4,9 @@ import { connect } from 'react-redux';
 class Landing extends React.Component {
   render() {
     return (
-      <div>
-        <div>Landing</div>
+      <div style={{ textAlign: 'center' }}>
+        <h1>Feedback</h1>
+        Collect feedback from users
       </div>
     );
   }
