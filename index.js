@@ -33,7 +33,7 @@ if (process.env.NODE_ENV === 'production') {
   // serve up index.html if doesn't recognize route
   const path = require('path');
   app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'clent', 'build', 'index.html'));
+    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
   });
 }
 
