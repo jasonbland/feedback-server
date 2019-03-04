@@ -1,13 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import SurveyForm from './SurveyForm';
 
-class SurveyNew extends React.Component {
+class SurveyForm extends React.Component {
   render() {
     return (
       <div>
-        <div>SurveyNew</div>
-        <SurveyForm />
+        <div>SurveyForm</div>
       </div>
     );
   }
@@ -16,4 +14,4 @@ class SurveyNew extends React.Component {
 export default connect(
   null,
   null
-)(SurveyNew);
+)(SurveyForm);
