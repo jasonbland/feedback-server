@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { reduxForm } from 'redux-form';
 
 class SurveyForm extends React.Component {
   render() {
@@ -11,7 +12,6 @@ class SurveyForm extends React.Component {
   }
 }
 
-export default connect(
-  null,
-  null
-)(SurveyForm);
+export default reduxForm({
+  form: 'surveyForm'
+})(SurveyForm);
