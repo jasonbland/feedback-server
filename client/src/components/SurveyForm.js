@@ -7,7 +7,7 @@ const FIELDS = [
   { label: 'Survey Title', name: 'title' },
   { label: 'Subject Line', name: 'subject' },
   { label: 'Email Body', name: 'body' },
-  { label: 'Recipient List', name: 'emails' }
+  { label: 'Recipient List', name: 'email' }
 ];
 
 class SurveyForm extends React.Component {
@@ -37,9 +37,11 @@ class SurveyForm extends React.Component {
 function validate(values) {
   const errors = {};
 
-  if (!values.title) {
-    errors.title = 'You must provide a title';
-  }
+  FIELDS.forEach(({ name }) => {
+    if (!values[name]) {
+      errors[name] = `You must provide a ${name}`;
+    }
+  });
 
   return errors;
 }
