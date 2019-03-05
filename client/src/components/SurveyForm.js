@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 import SurveyField from './SurveyField';
 
 const FIELDS = [
-  { label: 'Survey Title', name: 'surveyTitle' },
-  { label: 'Subject Line', name: 'surveyTitle' },
+  { label: 'Survey Title', name: 'title' },
+  { label: 'Subject Line', name: 'subject' },
   { label: 'Email Body', name: 'body' },
   { label: 'Recipient List', name: 'emails' }
 ];
