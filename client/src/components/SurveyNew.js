@@ -6,7 +6,6 @@ class SurveyNew extends React.Component {
   render() {
     return (
       <div>
-        <div>SurveyNew</div>
         <SurveyForm />
       </div>
     );
