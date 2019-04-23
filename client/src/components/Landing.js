@@ -5,7 +5,7 @@ class Landing extends React.Component {
   render() {
     return (
       <div style={{ textAlign: 'center' }}>
-        <h1>Feedback</h1>
+        <h1>Surveys</h1>
         Collect feedback from users
       </div>
     );

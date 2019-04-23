@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import Payments from './Payments';
 
+import '../styles/App.css';
+
 class Header extends React.Component {
   renderContent() {
     switch (this.props.auth) {
@@ -31,14 +33,16 @@ class Header extends React.Component {
 
   render() {
     return (
-      <nav>
-        <div className="nav-wrapper">
-          <Link to={this.props.auth ? '/surveys' : '/'} className="left brand-logo">
-            Feedback
-          </Link>
-          <ul className="right">{this.renderContent()}</ul>
-        </div>
-      </nav>
+      <div className="navbar-fixed">
+        <nav>
+          <div className="nav-wrapper red">
+            <Link to={this.props.auth ? '/surveys' : '/'} className="left brand-logo">
+              Surveys
+            </Link>
+            <ul className="right">{this.renderContent()}</ul>
+          </div>
+        </nav>
+      </div>
     );
   }
 }
